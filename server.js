@@ -1,12 +1,15 @@
 //express web server
 const express = require("express");
 const app = express();
+const lessonController = require("./controllers/lesson1");
+
 
 //send a GET request to display info
-app.get("/", (req, res) => {
-    res.send("Hello Raphael | Wrold"); // this function can be well handled in a controller folder
-});
+app.get("/", lessonController.emilyRoute
+);
 
+app.get("/hannah", lessonController.hannahRoute
+);
 //listen /use port 3000
 const port = 3000;
 
